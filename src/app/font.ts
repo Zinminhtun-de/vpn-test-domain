@@ -1,28 +1,25 @@
 import localFont from 'next/font/local';
 
-const quickSand = localFont({
+const schibstedGroteskFont = localFont({
   src: [
     {
-      path: '../components/fonts/Quicksand-Light.ttf',
-      weight: '400',
-    },
-    {
-      path: '../components/fonts/Quicksand-Regular.ttf',
+      path: '../components/fonts/SchibstedGrotesk-Regular.ttf',
       weight: '500',
     },
     {
-      path: '../components/fonts/Quicksand-Medium.ttf',
+      path: '../components/fonts/SchibstedGrotesk-Medium.ttf',
       weight: '600',
     },
     {
-      path: '../components/fonts/Quicksand-SemiBold.ttf',
+      path: '../components/fonts/SchibstedGrotesk-SemiBold.ttf',
       weight: '700',
     },
     {
-      path: '../components/fonts/Quicksand-Bold.ttf',
+      path: '../components/fonts/SchibstedGrotesk-Bold.ttf',
       weight: '800',
     },
   ],
+  variable: '--font-schibstedGrotesk',
 });
 
-export default quickSand;
+export default schibstedGroteskFont;

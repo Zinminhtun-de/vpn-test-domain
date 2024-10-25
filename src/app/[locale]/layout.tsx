@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import Providers from './providers';
 import i18nConfig from '../../../i18nConfig';
 import { dir } from 'i18next';
@@ -10,6 +9,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import '@/styles/globals.css';
 import { LANG_NAMESPACE } from '@/data/lang-namespace-constant';
+import schibstedGroteskFont from '../font';
 
 export const metadata: Metadata = {
   title: 'AIO User',
@@ -32,7 +32,8 @@ export default async function RootLayout({
   const { resources } = await initTranslations(locale, i18nNamespaces);
 
   return (
-    <html lang={locale} dir={dir(locale)}>
+    <html lang={locale} dir={dir(locale)}       className={`${schibstedGroteskFont.variable} font-schibstedGrotesk`}
+>
       <head>
         <link rel="icon" href="/logo.svg" />
       </head>
